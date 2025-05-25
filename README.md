@@ -39,3 +39,4 @@ users.json - здесь хранятся данные о пользовател�
 Не перемещайте и не переименовывайте папку data
 Бейджи:
 [![Python CI - Car Rental Project](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/ci.yml/badge.svg)](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/ci.yml)
+[![Build Package](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/build.yml/badge.svg)](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/build.yml)
