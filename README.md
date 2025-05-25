@@ -40,3 +40,12 @@ users.json - здесь хранятся данные о пользовател�
 Бейджи:
 [![Python CI - Car Rental Project](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/ci.yml/badge.svg)](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/ci.yml)
 [![Build Package](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/build.yml/badge.svg)](https://github.com/Vergil228-maker/car_rental_project/actions/workflows/build.yml)
+
+Описание
+Система проката автомобилей на Python. Поддерживает:
+
+- регистрацию и вход пользователей;
+- просмотр доступных машин;
+- бронирование, отмену и просмотр аренд;
+- роль администратора (добавление авто, просмотр всех аренд);
+- консольный интерфейс + JSON-хранилище.
