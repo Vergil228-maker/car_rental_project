@@ -1,0 +1,31 @@
+name: 🚀 Deploy to PyPI
+
+on:
+  release:
+    types: [published]  # триггер при выпуске релиза
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Клонировать репозиторий
+      uses: actions/checkout@v3
+
+    - name: 🐍 Установить Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: ⚙️ Установить build зависимости
+      run: |
+        python -m pip install --upgrade pip build twine
+
+    - name: 🏗️ Собрать проект
+      run: python -m build
+
+    - name: 📤 Загрузить на PyPI
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: twine upload dist/*
